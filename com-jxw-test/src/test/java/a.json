@@ -1,0 +1,240 @@
+{
+  "code": 100,
+  "data": {
+    "brandId": 0,
+    "catId": 13182,
+    "categorySettingList": [],
+    "created": 1540808839000,
+    "jWareId": 200110429805,
+    "logo": "jfs/t22252/100/1128268209/121692/e9c5b7df/5b20d1dbNd1f4f5b6.png",
+    "modified": 1575009212000,
+    "note": "中国石油新香洲加油站",
+    "operateType": 1028,
+    "price": 999999999,
+    "quantity": 99999,
+    "restrictedAddresStr": "",
+    "shopId": 887072,
+    "skus": [
+      {
+        "extSetting": [
+          {
+            "attrValue": {
+              "valueObj": "6.78"
+            },
+            "fieldId": "997",
+            "letter": "oilStationPrice",
+            "type": "text"
+          }
+        ],
+        "extSkuSetting": "[{"
+        attrValue
+        ":{"
+        valueObj
+        ":"
+        6.78
+        "},"
+        fieldId
+        ":"
+        997
+        ","
+        letter
+        ":"
+        oilStationPrice
+        ","
+        type
+        ":"
+        text
+        "}]",
+        "jSkuId": 200121813939,
+        "jWareId": 200110429805,
+        "jmiSkuPrices": [],
+        "outerId": "^38c34f214fe44e60baa6059cbcc14ccc",
+        "preStock": 0,
+        "quantity": 99999,
+        "saleList": [
+          {
+            "attrValue": {
+              "aliasName": "0#",
+              "valueObj": "2_5"
+            },
+            "fieldId": "996",
+            "letter": "oilTypeNum",
+            "type": "box"
+          }
+        ],
+        "skuId": 157260,
+        "skuPrice": 648,
+        "status": 1,
+        "wareId": 76684
+      },
+      {
+        "extSetting": [
+          {
+            "attrValue": {
+              "valueObj": "7.59"
+            },
+            "fieldId": "997",
+            "letter": "oilStationPrice",
+            "type": "text"
+          }
+        ],
+        "extSkuSetting": "[{"
+        attrValue
+        ":{"
+        valueObj
+        ":"
+        7.59
+        "},"
+        fieldId
+        ":"
+        997
+        ","
+        letter
+        ":"
+        oilStationPrice
+        ","
+        type
+        ":"
+        text
+        "}]",
+        "jSkuId": 200121813940,
+        "jWareId": 200110429805,
+        "jmiSkuPrices": [],
+        "outerId": "^a5e74299e3534c6dbdbc79894a8ee39d",
+        "preStock": 0,
+        "quantity": 99999,
+        "saleList": [
+          {
+            "attrValue": {
+              "aliasName": "95#",
+              "valueObj": "1_2"
+            },
+            "fieldId": "996",
+            "letter": "oilTypeNum",
+            "type": "box"
+          }
+        ],
+        "skuId": 157261,
+        "skuPrice": 734,
+        "status": 1,
+        "wareId": 76684
+      },
+      {
+        "extSetting": [
+          {
+            "attrValue": {
+              "valueObj": "7.00"
+            },
+            "fieldId": "997",
+            "letter": "oilStationPrice",
+            "type": "text"
+          }
+        ],
+        "extSkuSetting": "[{"attrValue
+        ":{"
+        valueObj
+        ":"
+        7.00
+        "},"
+        fieldId
+        ":"
+        997
+        ","
+        letter
+        ":"
+        oilStationPrice
+        ","
+        type
+        ":"
+        text
+        "}]",
+        "jSkuId": 200121813941,
+        "jWareId": 200110429805,
+        "jmiSkuPrices": [],
+        "outerId": "^6b42e4d531fc41dbab9f3f04a0030a8d",
+        "preStock": 0,
+        "quantity": 99999,
+        "saleList": [
+          {
+            "attrValue": {
+              "aliasName": "92#",
+              "valueObj": "1_1"
+            },
+            "fieldId": "996",
+            "letter": "oilTypeNum",
+            "type": "box"
+          }
+        ],
+        "skuId": 157262,
+        "skuPrice": 675,
+        "status": 1,
+        "wareId": 76684
+      }
+    ],
+    "status": 1,
+    "subTitle": "",
+    "title": "中国石油新香洲加油站",
+    "userName": "操作人",
+    "venderId": 10048041,
+    "wareId": 76684,
+    "wareImages": [
+      {
+        "created": 1559098769000,
+        "imgId": 12801880,
+        "imgPath": "jfs/t22252/100/1128268209/121692/e9c5b7df/5b20d1dbNd1f4f5b6.png",
+        "indexId": 1,
+        "modified": 1559098769000,
+        "status": 1,
+        "wareId": 76684
+      }
+    ],
+    "wareSettingList": [
+      {
+        "attrValue": {
+          "aliasName": "发送微信用户Pin",
+          "valueObj": "3212"
+        },
+        "fieldId": "995",
+        "letter": "messageUserPin",
+        "type": "text"
+      },
+      {
+        "attrValue": {
+          "aliasName": "商家地址",
+          "valueObj": "城轨明珠站旁"
+        },
+        "fieldId": "992",
+        "letter": "venderAddress",
+        "type": "text"
+      },
+      {
+        "attrValue": {
+          "aliasName": "纬度",
+          "valueObj": "22.270676580571557"
+        },
+        "fieldId": "994",
+        "letter": "latitude",
+        "type": "text"
+      },
+      {
+        "attrValue": {
+          "aliasName": "广东省",
+          "valueObj": "19"
+        },
+        "fieldId": "991",
+        "letter": "provinceId",
+        "type": "box"
+      },
+      {
+        "attrValue": {
+          "aliasName": "经度",
+          "valueObj": "113.51450529613582"
+        },
+        "fieldId": "993",
+        "letter": "longitude",
+        "type": "text"
+      }
+    ]
+  },
+  "msg": "调用成功"
+}

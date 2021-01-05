@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="com-jxw-test" />
+        <module name="com-jxw-algorithm" />
+        <module name="com-jxw-concurrency" />
+        <module name="com-jxw-generator" />
+        <module name="com-jxw-tool" />
+        <module name="com-jxw-elasticsearch" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com-jd-springtest" target="8" />
+      <module name="com.jxw.elasticsearch" target="1.8" />
+      <module name="com.jxw.generator" target="1.8" />
+      <module name="com.jxw.tool" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

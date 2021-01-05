@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="82b14f58-3079-46e8-99a6-ab01c5004f1a" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/practice$ExcelTest.ic" NAME="ExcelTest Coverage Results" MODIFIED="1548903956100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>test.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="Python Script" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven-repo" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.5.3" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.5.3\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="1OgA31sG3rxQ6vxLgtcJofmyhMA" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="jdk.selected.PYTHON_MODULE" value="Python 3.7" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/com-jxw-tool/src/main/java/com/jxw/tool" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jd-script" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\exercise\com-jxw-concurrency\src\main\java" />
+      <recent name="D:\IdeaProjects\exercise\com-jxw-test\src\main\resources" />
+      <recent name="D:\IdeaProjects\practice\com-jd-python\funscript" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jxw.common" />
+      <recent name="com.jxw.leetcode.concurrency" />
+      <recent name="io" />
+      <recent name="com.jd.es.utils" />
+      <recent name="patent" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\exercise\com-jxw-algorithm" />
+      <recent name="D:\IdeaProjects\exercise\com-jxw-algorithm\src\main\java\com\jxw\leetcode" />
+      <recent name="D:\IdeaProjects\exercise\com-jxw-algorithm\src\main\java\com\jxw\leetcode\offer" />
+      <recent name="D:\IdeaProjects\exercise\com-jxw-algorithm\src\main\java\com\jxw\leetcode\concurrency" />
+      <recent name="D:\IdeaProjects\exercise\com-jxw-elasticsearch\src\main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ReversePrint">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="exercise" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="exercise" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="较大分组的位置" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jxw.leetcode.everyday.较大分组的位置" />
+      <module name="com-jxw-algorithm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jxw.leetcode.everyday.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindRepeatNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jxw.leetcode.offer.FindRepeatNumber" />
+      <module name="com-jxw-algorithm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jxw.leetcode.offer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FizzBuzzSemaphore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jxw.leetcode.concurrency.FizzBuzzSemaphore" />
+      <module name="com-jxw-algorithm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jxw.leetcode.concurrency.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HeapOOM" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HeapOOM" />
+      <module name="com-jxw-test" />
+      <option name="VM_PARAMETERS" value="-Xms20m -Xmx20m -XX:+HeapDumpOnOutOfMemoryError" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="com-jxw-test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReplaceSpace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jxw.leetcode.offer.ReplaceSpace" />
+      <module name="com-jxw-algorithm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jxw.leetcode.offer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReversePrint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jxw.leetcode.offer.ReversePrint" />
+      <module name="com-jxw-algorithm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jxw.leetcode.offer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generator" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mybatis-generator:generate" />
+                <option value="-e" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/com-jxw-generator" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="com-jxw-algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="spring" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.32" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:\Program Files\Java\jdk1.8.0_171\jre">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="com-jd-springtest:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_practice" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50100" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="com-jd-springtest:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.HeapOOM" />
+      <item itemvalue="Application.FizzBuzzSemaphore" />
+      <item itemvalue="Application.FindRepeatNumber" />
+      <item itemvalue="Application.较大分组的位置" />
+      <item itemvalue="Application.ReplaceSpace" />
+      <item itemvalue="Maven.generator" />
+      <item itemvalue="Tomcat Server.spring" />
+      <item itemvalue="Application.ReversePrint" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ReversePrint" />
+        <item itemvalue="Application.ReplaceSpace" />
+        <item itemvalue="Application.较大分组的位置" />
+        <item itemvalue="Application.FindRepeatNumber" />
+        <item itemvalue="Application.FizzBuzzSemaphore" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\jiaxingwu\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82b14f58-3079-46e8-99a6-ab01c5004f1a" name="Default" comment="" />
+      <created>1539064596806</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539064596806</updated>
+      <workItem from="1539064598685" duration="1722000" />
+      <workItem from="1539066433311" duration="19920000" />
+      <workItem from="1539133612655" duration="5201000" />
+      <workItem from="1539140245075" duration="14514000" />
+      <workItem from="1539658713443" duration="3253000" />
+      <workItem from="1539675478248" duration="701000" />
+      <workItem from="1539680692794" duration="2930000" />
+      <workItem from="1539754516132" duration="1372000" />
+      <workItem from="1539764014754" duration="4846000" />
+      <workItem from="1539848282331" duration="5186000" />
+      <workItem from="1540133851862" duration="313000" />
+      <workItem from="1540369879631" duration="673000" />
+      <workItem from="1540453471484" duration="1056000" />
+      <workItem from="1540460326260" duration="15243000" />
+      <workItem from="1540647223247" duration="669000" />
+      <workItem from="1540973054326" duration="1056000" />
+      <workItem from="1541469137559" duration="25000" />
+      <workItem from="1541645965606" duration="466000" />
+      <workItem from="1541671151125" duration="1970000" />
+      <workItem from="1542114006809" duration="248000" />
+      <workItem from="1542959572226" duration="1347000" />
+      <workItem from="1543484101858" duration="2992000" />
+      <workItem from="1543825224892" duration="2691000" />
+      <workItem from="1544407618404" duration="2511000" />
+      <workItem from="1544430126040" duration="725000" />
+      <workItem from="1544431245007" duration="15495000" />
+      <workItem from="1544594272127" duration="8558000" />
+      <workItem from="1544663871207" duration="15526000" />
+      <workItem from="1545015786702" duration="14022000" />
+      <workItem from="1545181627971" duration="1202000" />
+      <workItem from="1545705759545" duration="876000" />
+      <workItem from="1545805184353" duration="6110000" />
+      <workItem from="1545893965165" duration="23221000" />
+      <workItem from="1546045395345" duration="6550000" />
+      <workItem from="1546074527509" duration="629000" />
+      <workItem from="1548227257510" duration="595000" />
+      <workItem from="1548688238517" duration="601000" />
+      <workItem from="1548729520077" duration="124000" />
+      <workItem from="1548737256622" duration="3890000" />
+      <workItem from="1548818178013" duration="630000" />
+      <workItem from="1548847979345" duration="729000" />
+      <workItem from="1548903080270" duration="12217000" />
+      <workItem from="1550114226788" duration="18428000" />
+      <workItem from="1550385478956" duration="3022000" />
+      <workItem from="1550539458069" duration="681000" />
+      <workItem from="1550632262915" duration="714000" />
+      <workItem from="1551254662772" duration="613000" />
+      <workItem from="1551437556815" duration="1456000" />
+      <workItem from="1551780341132" duration="1784000" />
+      <workItem from="1551789644964" duration="1162000" />
+      <workItem from="1551875124852" duration="3062000" />
+      <workItem from="1553244038644" duration="4591000" />
+      <workItem from="1553492707693" duration="1276000" />
+      <workItem from="1553516510677" duration="40000" />
+      <workItem from="1553605125184" duration="628000" />
+      <workItem from="1553666077299" duration="5531000" />
+      <workItem from="1553738282458" duration="3143000" />
+      <workItem from="1553753596283" duration="3412000" />
+      <workItem from="1553775014650" duration="6301000" />
+      <workItem from="1554343118254" duration="2391000" />
+      <workItem from="1554807114456" duration="1890000" />
+      <workItem from="1555294168888" duration="2213000" />
+      <workItem from="1555569496043" duration="909000" />
+      <workItem from="1555666332989" duration="6556000" />
+      <workItem from="1555836579624" duration="1609000" />
+      <workItem from="1555898223693" duration="254000" />
+      <workItem from="1555904095727" duration="1712000" />
+      <workItem from="1556248643239" duration="1454000" />
+      <workItem from="1556439594697" duration="1286000" />
+      <workItem from="1556460187779" duration="674000" />
+      <workItem from="1556631658864" duration="703000" />
+      <workItem from="1557305406660" duration="879000" />
+      <workItem from="1557996597240" duration="1401000" />
+      <workItem from="1558317581264" duration="2164000" />
+      <workItem from="1558448915032" duration="1072000" />
+      <workItem from="1558495584612" duration="2540000" />
+      <workItem from="1558690777710" duration="1470000" />
+      <workItem from="1558937296818" duration="514000" />
+      <workItem from="1559124779938" duration="1899000" />
+      <workItem from="1559273759808" duration="631000" />
+      <workItem from="1559299644876" duration="947000" />
+      <workItem from="1559526150243" duration="4358000" />
+      <workItem from="1559639534375" duration="2630000" />
+      <workItem from="1559736597056" duration="1072000" />
+      <workItem from="1559784175889" duration="1271000" />
+      <workItem from="1561962500298" duration="1238000" />
+      <workItem from="1562142281007" duration="1689000" />
+      <workItem from="1562205883900" duration="607000" />
+      <workItem from="1562672438313" duration="2718000" />
+      <workItem from="1563177842593" duration="1645000" />
+      <workItem from="1563353818174" duration="4304000" />
+      <workItem from="1563433165050" duration="8067000" />
+      <workItem from="1563959397646" duration="546000" />
+      <workItem from="1564043401098" duration="1897000" />
+      <workItem from="1564056304782" duration="683000" />
+      <workItem from="1564388665719" duration="1589000" />
+      <workItem from="1564402056257" duration="285000" />
+      <workItem from="1564480677259" duration="15539000" />
+      <workItem from="1564637917195" duration="2393000" />
+      <workItem from="1564661643171" duration="20756000" />
+      <workItem from="1564970250273" duration="6128000" />
+      <workItem from="1565056383418" duration="2551000" />
+      <workItem from="1565058955691" duration="230000" />
+      <workItem from="1565059193581" duration="45313000" />
+      <workItem from="1565580720961" duration="12671000" />
+      <workItem from="1565662007740" duration="2874000" />
+      <workItem from="1565675629708" duration="9945000" />
+      <workItem from="1566215956452" duration="7555000" />
+      <workItem from="1566378461788" duration="1764000" />
+      <workItem from="1566387784488" duration="18596000" />
+      <workItem from="1566474350737" duration="679000" />
+      <workItem from="1566529401098" duration="10987000" />
+      <workItem from="1566783644783" duration="5265000" />
+      <workItem from="1567069840493" duration="1699000" />
+      <workItem from="1567427077301" duration="1196000" />
+      <workItem from="1567579078991" duration="48749000" />
+      <workItem from="1567993553701" duration="165000" />
+      <workItem from="1571237497147" duration="1846000" />
+      <workItem from="1571389385988" duration="4872000" />
+      <workItem from="1571622373063" duration="1363000" />
+      <workItem from="1571626040717" duration="3253000" />
+      <workItem from="1571834567289" duration="660000" />
+      <workItem from="1571969576931" duration="751000" />
+      <workItem from="1572251505744" duration="690000" />
+      <workItem from="1573030469478" duration="7227000" />
+      <workItem from="1573463667192" duration="4362000" />
+      <workItem from="1573543812361" duration="5191000" />
+      <workItem from="1573623582309" duration="1243000" />
+      <workItem from="1573810348059" duration="1370000" />
+      <workItem from="1574217040991" duration="2723000" />
+      <workItem from="1574834531312" duration="3717000" />
+      <workItem from="1575010459263" duration="44000" />
+      <workItem from="1577239385494" duration="1886000" />
+      <workItem from="1578576081234" duration="59000" />
+      <workItem from="1579058815701" duration="99000" />
+      <workItem from="1579058956414" duration="89000" />
+      <workItem from="1581674053294" duration="1187000" />
+      <workItem from="1581689193416" duration="1177000" />
+      <workItem from="1581753866938" duration="1308000" />
+      <workItem from="1581762076336" duration="536000" />
+      <workItem from="1581926204868" duration="1207000" />
+      <workItem from="1582028111931" duration="1137000" />
+      <workItem from="1582093475827" duration="911000" />
+      <workItem from="1582377862115" duration="17000" />
+      <workItem from="1582523468136" duration="630000" />
+      <workItem from="1582722172995" duration="163000" />
+      <workItem from="1582722631641" duration="393000" />
+      <workItem from="1582724346232" duration="174000" />
+      <workItem from="1585206882282" duration="4882000" />
+      <workItem from="1585223429320" duration="991000" />
+      <workItem from="1585809416305" duration="5987000" />
+      <workItem from="1587087641851" duration="3237000" />
+      <workItem from="1587115513177" duration="6612000" />
+      <workItem from="1587140590889" duration="2677000" />
+      <workItem from="1587287173100" duration="332000" />
+      <workItem from="1587984513261" duration="1378000" />
+      <workItem from="1588036764769" duration="3999000" />
+      <workItem from="1588475256421" duration="7593000" />
+      <workItem from="1588759350165" duration="1234000" />
+      <workItem from="1588813740498" duration="898000" />
+      <workItem from="1589023504255" duration="59000" />
+      <workItem from="1589245647997" duration="3881000" />
+      <workItem from="1589288839297" duration="2146000" />
+      <workItem from="1589332067072" duration="1081000" />
+      <workItem from="1589773007879" duration="3023000" />
+      <workItem from="1589780732383" duration="44529000" />
+      <workItem from="1589955348426" duration="25960000" />
+      <workItem from="1590290908599" duration="5199000" />
+      <workItem from="1590408685395" duration="982000" />
+      <workItem from="1590414666441" duration="749000" />
+      <workItem from="1590579990674" duration="1824000" />
+      <workItem from="1590650750019" duration="13863000" />
+      <workItem from="1590718118347" duration="879000" />
+      <workItem from="1590720160815" duration="3281000" />
+      <workItem from="1590753276517" duration="2504000" />
+      <workItem from="1591007774430" duration="687000" />
+      <workItem from="1591078152932" duration="2732000" />
+      <workItem from="1591088590374" duration="6723000" />
+      <workItem from="1591178914769" duration="1859000" />
+      <workItem from="1591506465983" duration="18235000" />
+      <workItem from="1591585467071" duration="772000" />
+      <workItem from="1591699625350" duration="2986000" />
+      <workItem from="1591753192491" duration="198000" />
+      <workItem from="1591958909211" duration="821000" />
+      <workItem from="1592110900601" duration="125000" />
+      <workItem from="1592205810243" duration="13248000" />
+      <workItem from="1592372158546" duration="1335000" />
+      <workItem from="1592374749578" duration="1548000" />
+      <workItem from="1592537557415" duration="1113000" />
+      <workItem from="1592982531287" duration="2001000" />
+      <workItem from="1592988043597" duration="2483000" />
+      <workItem from="1593310106051" duration="2951000" />
+      <workItem from="1593314727102" duration="2903000" />
+      <workItem from="1593436052354" duration="488000" />
+      <workItem from="1593607771986" duration="1952000" />
+      <workItem from="1593654590803" duration="5761000" />
+      <workItem from="1593693949621" duration="371000" />
+      <workItem from="1593754582456" duration="1863000" />
+      <workItem from="1593848757741" duration="4267000" />
+      <workItem from="1595559064916" duration="3052000" />
+      <workItem from="1596164110528" duration="1133000" />
+      <workItem from="1597030814259" duration="618000" />
+      <workItem from="1601782668319" duration="371000" />
+      <workItem from="1601783825712" duration="120000" />
+      <workItem from="1602645029735" duration="51000" />
+      <workItem from="1603417603910" duration="208000" />
+      <workItem from="1603448418643" duration="456000" />
+      <workItem from="1604567907195" duration="598000" />
+      <workItem from="1604579805682" duration="989000" />
+      <workItem from="1605330717226" duration="36000" />
+      <workItem from="1605618455804" duration="589000" />
+      <workItem from="1605706358333" duration="629000" />
+      <workItem from="1606219804818" duration="714000" />
+      <workItem from="1606376487077" duration="319000" />
+      <workItem from="1606379533467" duration="1703000" />
+      <workItem from="1606912508907" duration="1777000" />
+      <workItem from="1606976888204" duration="7020000" />
+      <workItem from="1607078025907" duration="6739000" />
+      <workItem from="1607088607272" duration="1724000" />
+      <workItem from="1607306610511" duration="16338000" />
+      <workItem from="1607478236085" duration="5839000" />
+      <workItem from="1607928603946" duration="8345000" />
+      <workItem from="1608102906485" duration="8986000" />
+      <workItem from="1608444327488" duration="3509000" />
+      <workItem from="1608556121383" duration="872000" />
+      <workItem from="1608624234986" duration="1072000" />
+      <workItem from="1609142608229" duration="17241000" />
+      <workItem from="1609232512590" duration="6462000" />
+      <workItem from="1609317596440" duration="350000" />
+      <workItem from="1609318972980" duration="11205000" />
+      <workItem from="1609380317067" duration="1056000" />
+      <workItem from="1609411092124" duration="665000" />
+      <workItem from="1609727570331" duration="15475000" />
+      <workItem from="1609766325676" duration="178000" />
+      <workItem from="1609811624202" duration="7785000" />
+      <workItem from="1609831723761" duration="5520000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="575" y="139" key="#HeapOOM" timestamp="1606912714593">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="575" y="139" key="#HeapOOM/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606912714593" />
+    <state x="440" y="94" key="#Project_Structure" timestamp="1609729145215">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609729145215" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1609149248002">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609149248002" />
+    <state x="484" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1609729159886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="484" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609729159886" />
+    <state x="662" y="338" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1609756793683">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="338" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609756793683" />
+    <state x="565" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1609329157690">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="565" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609329157690" />
+    <state x="715" y="226" key="#xdebugger.evaluate" timestamp="1607940456223">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="715" y="226" key="#xdebugger.evaluate/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607940456223" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1609381013155">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1180" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1606977366086" />
+    <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609381013155" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605330750350" />
+    <state width="1879" height="356" key="GridCell.Tab.0.bottom" timestamp="1609835795227">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="297" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1609746981586" />
+    <state width="1879" height="356" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609835795227" />
+    <state width="1879" height="356" key="GridCell.Tab.0.center" timestamp="1609835795226">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="297" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1609746981586" />
+    <state width="1879" height="356" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609835795226" />
+    <state width="1879" height="356" key="GridCell.Tab.0.left" timestamp="1609835795226">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="297" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1609746981586" />
+    <state width="1879" height="356" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609835795226" />
+    <state width="1879" height="356" key="GridCell.Tab.0.right" timestamp="1609835795227">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="297" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1609746981586" />
+    <state width="1879" height="356" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609835795227" />
+    <state width="1879" height="356" key="GridCell.Tab.1.bottom" timestamp="1609835795227">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="356" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609835795227" />
+    <state width="1879" height="356" key="GridCell.Tab.1.center" timestamp="1609835795227">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="356" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609835795227" />
+    <state width="1879" height="356" key="GridCell.Tab.1.left" timestamp="1609835795227">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="356" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609835795227" />
+    <state width="1879" height="356" key="GridCell.Tab.1.right" timestamp="1609835795227">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1879" height="356" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609835795227" />
+    <state x="540" y="263" key="IDE.errors.dialog" timestamp="1609741526770">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="263" key="IDE.errors.dialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609741526770" />
+    <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1609742911074">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1609742911074" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609331370647" />
+    <state x="479" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1609329167902">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="479" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609329167902" />
+    <state x="643" y="262" width="634" height="516" key="find.popup" timestamp="1609728553647">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="643" y="262" width="634" height="516" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609728553647" />
+    <state x="573" y="140" key="new project wizard" timestamp="1609729094253">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="573" y="140" key="new project wizard/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609729094253" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/com-jxw-algorithm/src/main/java/com/jxw/leetcode/offer/FindRepeatNumber.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/com-jxw-algorithm/src/main/java/com/jxw/leetcode/offer/ReversePrint.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
