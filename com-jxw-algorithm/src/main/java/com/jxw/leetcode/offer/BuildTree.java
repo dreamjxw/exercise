@@ -5,7 +5,7 @@ package com.jxw.leetcode.offer;
  * @author jiaxingwu
  * @date 2021/1/5 16:41
  * @description https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/
- *
+ * <p>
  * 输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字
  */
 public class BuildTree {
@@ -48,15 +48,5 @@ public class BuildTree {
         treeNode.left = buildTree(preorder, inorder, pIndex, inLeft, index - 1);
         treeNode.right = buildTree(preorder, inorder, pIndex + (index - inLeft), index + 1, inRight);
         return treeNode;
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
     }
 }
