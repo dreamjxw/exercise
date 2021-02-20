@@ -16,7 +16,7 @@ public class LongestPalindrome {
         int i = s.length() - 1;
         int left = 0, right = i;
         char[] chars = s.toCharArray();
-        while (true) {
+        while (i > 0) {
             if (checkPalindrome(chars, left++, right++)) {
                 return s.substring(--left, right);
             }
@@ -26,6 +26,7 @@ public class LongestPalindrome {
                 right = i;
             }
         }
+        return null;
     }
 
     private boolean checkPalindrome(char[] chars, int i, int j) {
