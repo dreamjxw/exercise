@@ -8,13 +8,6 @@ package com.jxw.leetcode.offer;
  */
 public class SearchInSortArray {
 
-    public static void main(String[] args) {
-
-        int[] ints = {2, 2};
-        int search = new SearchInSortArray().search(ints, 3);
-        System.out.println(search);
-    }
-
 
     public int search(int[] nums, int target) {
         int i = find(nums, target);
@@ -23,16 +16,11 @@ public class SearchInSortArray {
         }
         int count = 1;
         int j = i, k = i;
-        while (--j >= 0 && ++i < nums.length) {
-            if (nums[k] == nums[i]) {
-                count++;
-            }
-            if (nums[k] == nums[j]) {
-                count++;
-            }
-            if (nums[i] != nums[k] && nums[j] != nums[k]) {
-                break;
-            }
+        while (++i < nums.length && nums[i] == nums[k]) {
+            count++;
+        }
+        while (--j >= 0 && nums[j] == nums[k]) {
+            count++;
         }
         return count;
     }
@@ -41,7 +29,7 @@ public class SearchInSortArray {
         if (nums.length == 0) {
             return -1;
         }
-        int i = 0, j = nums.length;
+        int i = 0, j = nums.length - 1;
         while (i <= j) {
             int flag = (i + j) / 2;
             if (nums[flag] == target) {
@@ -55,5 +43,15 @@ public class SearchInSortArray {
             }
         }
         return -1;
+    }
+
+    public static void main(String[] args) {
+
+        int[] ints = {2, 2};
+        // int search = new SearchInSortArray().search(ints, 3);
+
+        int i = new SearchInSortArray().find(ints, 3);
+        System.out.println(i);
+        // System.out.println(search);
     }
 }
