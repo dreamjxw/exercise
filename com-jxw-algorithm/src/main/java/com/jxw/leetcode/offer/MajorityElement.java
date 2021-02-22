@@ -1,7 +1,5 @@
 package com.jxw.leetcode.offer;
 
-import java.util.Arrays;
-
 /**
  * @author jiaxingwu
  * @date 2021/2/5 17:52
@@ -18,7 +16,18 @@ public class MajorityElement {
     }
 
     public int majorityElement(int[] nums) {
-        Arrays.sort(nums);
-        return nums[nums.length / 2];
+        int result = nums[0];
+        int temp = 0;
+        for (int num : nums) {
+            if (temp == 0) {
+                result = num;
+            }
+            if (result == num) {
+                temp++;
+            } else {
+                temp--;
+            }
+        }
+        return result;
     }
 }
