@@ -33,8 +33,8 @@ public class PythonTest extends PythonService<Double> {
     @Test
     public void saveStringAsFile() {
         try {
-            String file = "def fun_test(data, temp):\n" +
-                    "    return data + temp\n" +
+            String file = "def fun_test(data1.txt, temp):\n" +
+                    "    return data1.txt + temp\n" +
                     "\n" +
                     "\n" +
                     "if __name__ == \"__main__\":\n" +
@@ -86,16 +86,16 @@ public class PythonTest extends PythonService<Double> {
     }
     @Test
     public void jythonUtilForStreamTest() {
-        String script = "def check_param(data):\n" +
+        String script = "def check_param(data1.txt):\n" +
                 "    try:\n" +
-                "        data = float(data)\n" +
-                "        return True, data\n" +
+                "        data1.txt = float(data1.txt)\n" +
+                "        return True, data1.txt\n" +
                 "    except BaseException:\n" +
                 "        return False, 0\n" +
                 "\n" +
                 "\n" +
-                "def _calculator_fun(data):\n" +
-                "    is_success, param = check_param(data)\n" +
+                "def _calculator_fun(data1.txt):\n" +
+                "    is_success, param = check_param(data1.txt)\n" +
                 "    if not is_success:\n" +
                 "        return \"Invalid request parameter\"\n" +
                 "    if 0 <= param < 2000:\n" +
