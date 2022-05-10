@@ -25,7 +25,7 @@ import java.util.stream.Collectors;
  * @date 2022/3/21 下午2:58
  * @description do something with this class...
  */
-public class dreamFileResolver {
+public class BaiDuFileResolver {
     public static void main(String[] args) {
 //        fixedData();
 //        String path = "/Users/jiaxingwu/Desktop/finddata";
