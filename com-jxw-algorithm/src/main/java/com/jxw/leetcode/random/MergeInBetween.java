@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2022 Baidu, Inc. All Rights Reserved.
+ * Copyright (C) 2022 Dream, Inc. All Rights Reserved.
  */
 package com.jxw.leetcode.random;
 
