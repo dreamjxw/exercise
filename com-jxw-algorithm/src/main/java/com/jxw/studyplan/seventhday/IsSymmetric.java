@@ -3,7 +3,7 @@
  */
 package com.jxw.studyplan.seventhday;
 
-import com.jxw.leetcode.offer.TreeNode;
+import com.jxw.domain.TreeNode;
 
 /**
  * @author jiaxingwu

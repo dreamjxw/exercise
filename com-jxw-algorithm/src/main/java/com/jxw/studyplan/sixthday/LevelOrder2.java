@@ -3,7 +3,7 @@
  */
 package com.jxw.studyplan.sixthday;
 
-import com.jxw.leetcode.offer.TreeNode;
+import com.jxw.domain.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

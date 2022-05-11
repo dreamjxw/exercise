@@ -1,4 +1,4 @@
-package com.jxw.leetcode.offer;
+package com.jxw.domain;
 
 /**
  * @author jiaxingwu
