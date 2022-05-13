@@ -7,6 +7,7 @@ import com.jxw.domain.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * @author jiaxingwu
@@ -33,21 +34,35 @@ public class 二叉树的后序遍历 {
         list.add(treeNode.val);
     }
 
-    public String serialize(TreeNode root) {
-        StringBuilder result = new StringBuilder();
+    /**
+     * 非递归
+     */
+    public List<Integer> postorderTraversal4Loop(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
         if (root == null) {
-            return result.toString();
+            return list;
         }
-        serialize(root, result);
-        return result.toString();
-    }
-
-    public void serialize(TreeNode root, StringBuilder sb) {
-        if (root == null) {
-            return;
+        Stack<TreeNode> stack = new Stack<>();
+        Stack<TreeNode> help = new Stack<>();
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            // 将头节点压入help栈中存储
+            TreeNode cur = stack.pop();
+            help.push(cur);
+            /**
+             * 因为stack栈不是打印的那个栈，所以要想help栈中先打印左子树 stack栈中就要先放入左子树，让右子树先进入help栈
+             */
+            if (cur.left != null) {
+                stack.push(cur.left);
+            }
+            if (cur.right != null) {
+                stack.push(cur.right);
+            }
         }
-        serialize(root.left, sb);
-        sb.append(root.val);
-        serialize(root.right, sb);
+        while (!help.isEmpty()) {
+            // 打印
+            list.add(help.pop().val);
+        }
+        return list;
     }
 }

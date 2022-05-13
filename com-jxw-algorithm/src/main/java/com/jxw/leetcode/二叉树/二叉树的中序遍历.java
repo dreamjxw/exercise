@@ -7,6 +7,7 @@ import com.jxw.domain.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * @author jiaxingwu
@@ -23,6 +24,18 @@ public class 二叉树的中序遍历 {
         return list;
     }
 
+
+    public List<Integer> inorderTraversal1(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
+        if (root == null) {
+            return list;
+        }
+        list.add(root.val);
+        list.addAll(inorderTraversal1(root.left));
+        list.addAll(inorderTraversal1(root.right));
+        return list;
+    }
+
     private void inorderTraversal(TreeNode root, List<Integer> list) {
         if (root == null) {
             return;
@@ -30,5 +43,27 @@ public class 二叉树的中序遍历 {
         inorderTraversal(root.left, list);
         list.add(root.val);
         inorderTraversal(root.right, list);
+    }
+
+    /**
+     * 非递归
+     */
+    public List<Integer> inorderTraversal4Loop(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
+        if (root == null) {
+            return list;
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        while (!stack.empty()) {
+            while (root != null) {
+                stack.push(root);
+                root = root.left;
+            }
+            TreeNode pop = stack.pop();
+            list.add(pop.val);
+            root = pop.right;
+        }
+        return list;
     }
 }
