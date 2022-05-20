@@ -50,7 +50,8 @@ public class 二叉树的后序遍历 {
             TreeNode cur = stack.pop();
             help.push(cur);
             /**
-             * 因为stack栈不是打印的那个栈，所以要想help栈中先打印左子树 stack栈中就要先放入左子树，让右子树先进入help栈
+             * 因为stack栈不是打印的那个栈，所以要想help栈中先打印左子树
+             * stack栈中就要先放入左子树，让右子树先进入help栈
              */
             if (cur.left != null) {
                 stack.push(cur.left);

@@ -24,18 +24,6 @@ public class 二叉树的中序遍历 {
         return list;
     }
 
-
-    public List<Integer> inorderTraversal1(TreeNode root) {
-        List<Integer> list = new ArrayList<>();
-        if (root == null) {
-            return list;
-        }
-        list.add(root.val);
-        list.addAll(inorderTraversal1(root.left));
-        list.addAll(inorderTraversal1(root.right));
-        return list;
-    }
-
     private void inorderTraversal(TreeNode root, List<Integer> list) {
         if (root == null) {
             return;
