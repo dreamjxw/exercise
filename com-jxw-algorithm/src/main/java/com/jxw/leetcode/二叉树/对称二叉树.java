@@ -21,7 +21,7 @@ import com.jxw.domain.TreeNode;
  */
 public class 对称二叉树 {
     public boolean isSymmetric(TreeNode root) {
-        return isSymmetric(root.left,root.right);
+        return isSymmetric(root.left, root.right);
     }
 
     /**
@@ -29,16 +29,16 @@ public class 对称二叉树 {
      * 2. 两个值相等时 对称；
      * 3. 以上规则针对 左子树的左节点和右子树的右节点  以及  左子树的右节点右子树的左节点 之间
      */
-    private boolean isSymmetric(TreeNode leftRoot,TreeNode rightRoot) {
-        if(leftRoot==null&&rightRoot==null){
+    private boolean isSymmetric(TreeNode leftRoot, TreeNode rightRoot) {
+        if (leftRoot == null && rightRoot == null) {
             return true;
         }
-        if(leftRoot==null||rightRoot==null){
+        if (leftRoot == null || rightRoot == null) {
             return false;
         }
-        if(leftRoot.val != rightRoot.val){
+        if (leftRoot.val != rightRoot.val) {
             return false;
         }
-        return isSymmetric(leftRoot.left,rightRoot.right)&&isSymmetric(leftRoot.right,rightRoot.left);
+        return isSymmetric(leftRoot.left, rightRoot.right) && isSymmetric(leftRoot.right, rightRoot.left);
     }
 }

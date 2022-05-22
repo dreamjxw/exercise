@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2022 Baidu, Inc. All Rights Reserved.
  */
-package com.jxw.leetcode.二叉树;
+package com.jxw.leetcode.二叉树.构造二叉树;
 
 import com.jxw.domain.TreeNode;
 
@@ -16,7 +16,7 @@ import com.jxw.domain.TreeNode;
  * 链接：https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class 从中序与后序遍历序列构造二叉树 {
+public class 根据中序与后序遍历序列构造二叉树 {
 
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         return buildTree(inorder, 0, inorder.length - 1, postorder, 0, postorder.length - 1);

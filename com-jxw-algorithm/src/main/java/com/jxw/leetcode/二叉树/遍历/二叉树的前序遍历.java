@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2022 Baidu, Inc. All Rights Reserved.
  */
-package com.jxw.leetcode.二叉树;
+package com.jxw.leetcode.二叉树.遍历;
 
 import com.jxw.domain.TreeNode;
 
@@ -11,32 +11,32 @@ import java.util.Stack;
 
 /**
  * @author jiaxingwu
- * @date 2022/5/10 下午6:33
+ * @date 2022/5/11 上午10:25
  * @description do something with this class...
  */
-public class 二叉树的中序遍历 {
-    public List<Integer> inorderTraversal(TreeNode root) {
+public class 二叉树的前序遍历 {
+    public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         if (root == null) {
             return list;
         }
-        inorderTraversal(root, list);
+        preorderTraversal(root, list);
         return list;
     }
 
-    private void inorderTraversal(TreeNode root, List<Integer> list) {
+    private void preorderTraversal(TreeNode root, List<Integer> list) {
         if (root == null) {
             return;
         }
-        inorderTraversal(root.left, list);
         list.add(root.val);
-        inorderTraversal(root.right, list);
+        preorderTraversal(root.left, list);
+        preorderTraversal(root.right, list);
     }
 
     /**
      * 非递归
      */
-    public List<Integer> inorderTraversal4Loop(TreeNode root) {
+    public List<Integer> preorderTraversal4Loop(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         if (root == null) {
             return list;
@@ -44,13 +44,14 @@ public class 二叉树的中序遍历 {
         Stack<TreeNode> stack = new Stack<>();
         stack.push(root);
         while (!stack.empty()) {
-            while (root != null) {
-                stack.push(root);
-                root = root.left;
+            TreeNode treeNode = stack.pop();
+            list.add(treeNode.val);
+            if (treeNode.right != null) {
+                stack.push(treeNode.right);
             }
-            TreeNode pop = stack.pop();
-            list.add(pop.val);
-            root = pop.right;
+            if (treeNode.left != null) {
+                stack.push(treeNode.left);
+            }
         }
         return list;
     }

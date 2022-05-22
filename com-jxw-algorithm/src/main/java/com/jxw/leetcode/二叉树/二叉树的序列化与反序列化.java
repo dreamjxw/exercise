@@ -4,7 +4,6 @@
 package com.jxw.leetcode.二叉树;
 
 import com.jxw.domain.TreeNode;
-import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
@@ -26,25 +25,6 @@ public class 二叉树的序列化与反序列化 {
 
     private static final String SPLIT = ",";
     private static final String NULL = "@";
-
-    public static void main(String[] args) {
-        TreeNode treeNode1 = new TreeNode(1);
-        TreeNode treeNode2 = new TreeNode(2);
-        TreeNode treeNode3 = new TreeNode(3);
-        TreeNode treeNode4 = new TreeNode(4);
-        TreeNode treeNode5 = new TreeNode(5);
-        treeNode1.left = treeNode2;
-        treeNode1.right = treeNode3;
-        treeNode3.left = treeNode4;
-        treeNode3.right = treeNode5;
-
-
-        二叉树的序列化与反序列化 main = new 二叉树的序列化与反序列化();
-        String serialize = main.serialize(treeNode1);
-        TreeNode deserialize = main.deserialize(serialize);
-        System.out.println(deserialize.toString());
-
-    }
 
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {

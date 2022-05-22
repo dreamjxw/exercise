@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2022 Baidu, Inc. All Rights Reserved.
  */
-package com.jxw.leetcode.二叉树;
+package com.jxw.leetcode.二叉树.遍历;
 
 import com.jxw.domain.TreeNode;
 
