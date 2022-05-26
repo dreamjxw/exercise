@@ -1,39 +1,41 @@
-package com.jxw;
+/*
+ * Copyright (C) 2022 Baidu, Inc. All Rights Reserved.
+ */
+package com.jxw.leetcode.二叉搜索树;
 
 import com.jxw.domain.TreeNode;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
-public class Main {
-    public static void main(String[] args) {
-        TreeNode treeNode1 = new TreeNode(1);
-        TreeNode treeNode3 = new TreeNode(3);
-        TreeNode treeNode2 = new TreeNode(2);
-
-        treeNode1.left = treeNode3;
-        treeNode3.right = treeNode2;
-        new Main().recoverTree(treeNode1);
-        System.out.println(treeNode1);
-    }
-
+/**
+ * @author jiaxingwu
+ * @date 2022/5/26 下午5:28
+ * @description 给你二叉搜索树的根节点 root ，该树中的 恰好 两个节点的值被错误地交换。请在不改变其结构的情况下，恢复这棵树 。
+ * https://leetcode.cn/problems/recover-binary-search-tree/
+ */
+public class 恢复二叉搜索树 {
+    /**
+     * 1. 中序遍历
+     * 2. 找到需要交换的两个元素
+     * 3，再次遍历删除掉
+     */
     public void recoverTree(TreeNode root) {
         List<Integer> list = new ArrayList<Integer>();
         loop(root, list);
 
         int first = 0;
         int second = 0;
-        List<Integer> list2 = new ArrayList<Integer>(list);
-        list2.sort(Comparator.naturalOrder());
         boolean temp = true;
-        for (int i = 0; i < list.size(); i++) {
-            if (!list.get(i).equals(list2.get(i))) {
+        for (int i = 0; i < list.size() - 1; i++) {
+            if (list.get(i + 1) < list.get(i)) {
                 if (temp) {
-                    first = list.get(i);
+                    first = list.get(i + 1);
+                    second = list.get(i);
                     temp = false;
                 } else {
-                    second = list.get(i);
+                    first = list.get(i + 1);
+                    break;
                 }
             }
         }
