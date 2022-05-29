@@ -1,68 +1,111 @@
 package com.jxw;
 
-import com.jxw.domain.TreeNode;
-
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class Main {
-    public static void main(String[] args) {
-        TreeNode treeNode1 = new TreeNode(1);
-        TreeNode treeNode3 = new TreeNode(3);
-        TreeNode treeNode2 = new TreeNode(2);
 
-        treeNode1.left = treeNode3;
-        treeNode3.right = treeNode2;
-        new Main().recoverTree(treeNode1);
-        System.out.println(treeNode1);
+    public static void main(String[] args) {
+        int[][] data = new int[3][2];
+        data[0][0] = 0;
+        data[0][1] = 3;
+        data[1][0] = 2;
+        data[1][1] = 4;
+        data[2][0] = 1;
+        data[2][1] = 3;
+        long l = new Main().maximumImportance(5, data);
+        System.out.println(l);
     }
 
-    public void recoverTree(TreeNode root) {
-        List<Integer> list = new ArrayList<Integer>();
-        loop(root, list);
-
-        int first = 0;
-        int second = 0;
-        List<Integer> list2 = new ArrayList<Integer>(list);
-        list2.sort(Comparator.naturalOrder());
-        boolean temp = true;
-        for (int i = 0; i < list.size(); i++) {
-            if (!list.get(i).equals(list2.get(i))) {
-                if (temp) {
-                    first = list.get(i);
-                    temp = false;
-                } else {
-                    second = list.get(i);
-                }
+    public boolean digitCount(String num) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < num.length(); i++) {
+            Integer key = (int) num.charAt(i) - 48;
+            if (map.containsKey(key)) {
+                map.put(key, map.get(key) + 1);
+            } else {
+                map.put(key, 1);
             }
         }
+        for (int i = 0; i < num.length(); i++) {
+            Integer temp = map.getOrDefault(i, 0);
+            Integer value = (int) num.charAt(i) - 48;
+            if (!temp.equals(value)) {
+                return false;
+            }
+        }
+        return true;
+    }
 
-        repact(root, first, second);
+    public String largestWordCount(String[] messages, String[] senders) {
+        Map<String, Set<Integer>> map = new HashMap<>();
+
+        for (int i = 0; i < senders.length; i++) {
+            Set<Integer> set = map.get(senders[i]);
+            if (set == null) {
+                set = new HashSet<>();
+            }
+            set.add(i);
+            map.put(senders[i], set);
+        }
+        int resultTemp = 0;
+        String resultName = "";
+        for (Map.Entry<String, Set<Integer>> entry : map.entrySet()) {
+            Set<Integer> value = entry.getValue();
+            if (value == null) {
+                continue;
+            }
+            int temp = 0;
+            for (Integer item : value) {
+                temp += messages[item].split(" ").length;
+            }
+
+            if (temp > resultTemp) {
+                resultTemp = temp;
+                resultName = entry.getKey();
+            }
+            if (temp == resultTemp && entry.getKey().compareTo(resultName) > 0) {
+                resultName = entry.getKey();
+            }
+        }
+        return resultName;
     }
 
 
-    private void loop(TreeNode root, List<Integer> list) {
-        if (root == null) {
-            return;
+    public long maximumImportance(int n, int[][] roads) {
+        Map<Integer, Long> map = new HashMap<>();
+        for (int[] road : roads) {
+            map.merge(road[0], 1L, Long::sum);
+            map.merge(road[1], 1L, Long::sum);
         }
-        loop(root.left, list);
-        list.add(root.val);
-        loop(root.right, list);
+
+        List<Map.Entry<Integer, Long>> entrySet = new ArrayList<>(map.entrySet());
+        Collections.sort(entrySet, new MyComparator());
+
+        Map<Integer, Integer> mapping = new HashMap<>();
+        for (Map.Entry<Integer, Long> entry : entrySet) {
+            mapping.put(entry.getKey(), n--);
+        }
+        long result = 0L;
+        for (int[] road : roads) {
+            long road0 = mapping.get(road[0]);
+            long road1 = mapping.get(road[1]);
+            result += (road0 + road1);
+        }
+        return result;
+
     }
 
-    private void repact(TreeNode root, int first, int second) {
-        if (root == null) {
-            return;
+    static class MyComparator implements Comparator<Map.Entry<Integer, Long>> {
+        @Override
+        public int compare(Map.Entry<Integer, Long> o1, Map.Entry<Integer, Long> o2) {
+            return (o2.getValue()).compareTo(o1.getValue());
         }
-        int val = root.val;
-        if (val == first) {
-            root.val = second;
-        }
-        if (val == second) {
-            root.val = first;
-        }
-        repact(root.left, first, second);
-        repact(root.right, first, second);
     }
 }
