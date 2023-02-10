@@ -38,7 +38,7 @@ public class FileResolver {
         try {
 
 
-            String fileName1 = "";
+            String fileName1 = "/Users/jiaxingwu/Desktop/data.txt";
 
 
             //读取文件

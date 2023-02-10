@@ -11,14 +11,10 @@ import java.util.Random;
  * @description do something with this class...
  */
 public class 非重叠矩形中的随机点 {
-
-}
-
-class Solution {
     int[][] data;
     Random random = new Random();
 
-    public Solution(int[][] rects) {
+    public 非重叠矩形中的随机点(int[][] rects) {
         data = rects;
     }
 
