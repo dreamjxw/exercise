@@ -1,16 +1,21 @@
 # yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
-language: "en-US"
-early_access: false
 reviews:
-  profile: "chill"
-  request_changes_workflow: false
-  high_level_summary: true
-  poem: true
-  review_status: true
-  review_details: false
   auto_review:
     enabled: true
-    drafts: false
-chat:
-  auto_reply: true
+  path_instructions:
+    - path: "**/*.java"
+      instructions: "按照 Google Java 风格指南审查"
+path_filters:
+  include:
+    - "src/**/*.java"
+    - "pom.xml"
+  exclude:
+    - "target/**"
+    - "**/*.test.js"
+
+rules:
+  - security_issues
+  - bugs
+  - code_quality
+  - best_practices
 
