@@ -5,17 +5,3 @@ reviews:
   path_instructions:
     - path: "**/*.java"
       instructions: "按照 Google Java 风格指南审查"
-path_filters:
-  include:
-    - "src/**/*.java"
-    - "pom.xml"
-  exclude:
-    - "target/**"
-    - "**/*.test.js"
-
-rules:
-  - security_issues
-  - bugs
-  - code_quality
-  - best_practices
-
