@@ -75,7 +75,7 @@ jobs:
       - name: Post Review to PR
         run: |
           curl -s -X POST "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/comments" \
-            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Authorization: token ${{ secrets.TOKEN_4_GITHUB }}" \
             -H "Content-Type: application/json" \
             -d "{
               \"body\": \"### 🤖 AI 代码评审结果（DeepSeek）\\n\\n${{ steps.ai_review.outputs.review_result }}\"
