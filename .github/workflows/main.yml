@@ -1,0 +1,82 @@
+# AI代码评审工作流：PR触发 → 调用DeepSeek → 回写评论
+name: AI Code Review with DeepSeek
+
+# 触发条件：新建/更新Pull Request时
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  code-review:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write  # 允许写PR评论
+      contents: read       # 允许读取代码
+
+    steps:
+      # 步骤1：拉取仓库代码
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 拉取完整提交记录，方便对比PR代码
+
+      # 步骤2：获取PR的diff代码（只对比变更的代码）
+      - name: Get PR diff
+        id: get_diff
+        run: |
+          # 获取PR的diff内容
+          DIFF=$(git diff ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
+          # 处理特殊字符，避免传递失败
+          DIFF_ESCAPED=$(echo "$DIFF" | jq -s -R .)
+          echo "diff_content=$DIFF_ESCAPED" >> $GITHUB_OUTPUT
+
+      # 步骤3：调用DeepSeek API做代码评审
+      - name: Run AI Code Review with DeepSeek
+        id: ai_review
+        run: |
+          # 构造DeepSeek的请求体
+          PAYLOAD=$(cat << EOF
+          {
+            "model": "deepseek-coder-v2",  # DeepSeek代码评审推荐模型
+            "messages": [
+              {
+                "role": "system",
+                "content": "你是资深代码评审专家，需要评审以下代码变更：1. 指出语法错误/逻辑漏洞；2. 优化代码可读性/性能；3. 提示潜在bug/安全风险；4. 给出具体修改建议；5. 语言简洁，只说重点。"
+              },
+              {
+                "role": "user",
+                "content": "请评审以下代码diff：${{ steps.get_diff.outputs.diff_content }}"
+              }
+            ],
+            "temperature": 0.2,  # 低随机性，评审更严谨
+            "max_tokens": 2000
+          }
+          EOF
+          )
+
+          # 调用DeepSeek API
+          RESPONSE=$(curl -s -X POST "https://api.deepseek.com/v1/chat/completions" \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${{ secrets.DEEPSEEK_API_KEY }}" \
+            -d "$PAYLOAD")
+
+          # 提取评审结果
+          REVIEW_RESULT=$(echo "$RESPONSE" | jq -r '.choices[0].message.content')
+          # 处理空结果
+          if [ "$REVIEW_RESULT" = "null" ]; then
+            REVIEW_RESULT="AI评审暂未返回结果，请检查API Key或网络。"
+          fi
+
+          # 转义后输出，供下一步使用
+          REVIEW_ESCAPED=$(echo "$REVIEW_RESULT" | jq -s -R .)
+          echo "review_result=$REVIEW_ESCAPED" >> $GITHUB_OUTPUT
+
+      # 步骤4：把评审结果回写到PR评论
+      - name: Post Review to PR
+        run: |
+          curl -s -X POST "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/comments" \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"body\": \"### 🤖 AI 代码评审结果（DeepSeek）\\n\\n${{ steps.ai_review.outputs.review_result }}\"
+            }"
