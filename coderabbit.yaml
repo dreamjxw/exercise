@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+reviews:
+  auto_review:
+    enabled: true
+  path_instructions:
+    - path: "**/*.java"
+      instructions: "按照 Google Java 风格指南审查"

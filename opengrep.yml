@@ -1,0 +1,20 @@
+# opengrep.yml - 项目根目录下的配置文件
+# 加载的规则源：本地规则目录 + 远程公共规则
+config:
+  - ./opengrep/rule/
+  - p/security
+# 扫描排除项（跳过无关文件/目录）
+exclude:
+  - node_modules/**
+  - venv/**
+  - target/**
+  - "*.pyc"
+  - "dist/**"
+# 输出配置
+output: scan-result.sarif
+format: sarif
+# 4. 可选补充配置
+jobs: 4                                  # 并行扫描核心数（默认8，可根据机器调整）
+severity: [ERROR, WARNING]               # 仅上报 ERROR/WARNING 级别的结果（过滤 INFO）
+timeout: 10.0                             # 单个文件扫描超时时间（默认5秒，单位：秒）
+verbose: true                             # 显示详细扫描日志（便于调试规则加载问题）
